@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="calculator.js"></script>
+    <!--Heading-->
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <!--Words above form field-->
+    <h1>Calculate your tip</h1>
+    <!--Form for user to enter their bill amount -->
+    <form id="form" onsubmit="return false;">
+        <input type ="text" id="userInput" placeholder= "enter your bill"/><br>
+        <input type="submit" value="15%" onclick="tipCalculator(.15);" />
+        <input type="submit" value="20%" onclick="tipCalculator(.20);" />
+        <input type="submit" value="25%" onclick="tipCalculator(.25);" />
+        
+    </form>
+    <!--Displays tip after clicking button-->
+    <h3 id="tip"></h3>
+    <!--Displays full bill amount (Tip plus bill) afer clicking button-->
+    <h2 id="full-bill"></h2>
+    
+</body>
